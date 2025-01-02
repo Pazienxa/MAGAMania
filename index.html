@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trump'$ MAGA Mania</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+    <header id="header">
+        <a href="index.html" class="logo"><img id="logo" class="object" data-value="-2" src="logot.png" alt=""></img></a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#sec">About</a></li>
+            <li><a href="https://x.com/TrumpMAGAmania" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <!-- <li><a href="https://discord.gg/Y2npywdPuA" target="_blank" rel="noopener noreferrer">Discord</a></li> -->
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="https://www.jpg.store/collection/trumpmagamania?tab=minting" target="_blank" rel="noopener noreferrer">MAGA</a></li>
+        </ul>  
+    </header>
+
+    <section>
+        <h2 id="text"><span>It's time we</span><br>Make Crypto Great Again</h2>
+        <img id="video" class="object" data-value="-2" src="vid.jpg" alt=""></img> 
+        <a href="https://www.jpg.store/collection/trumpmagamania?tab=minting" target="_blank" rel="noopener noreferrer" id="btn">MINT</a>
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>About Trump'$ MAGA Mania!</h2>
+
+        <img id="char" class="object" data-value="-2" src="char.png" alt=""></img> 
+
+        <p>
+            Welcome to Trump's Era, where the art of the deal meets the art of NFTs! Dive into a collection that captures the unforgettable moments and larger-than-life persona of Donald Trump. Each piece of Trump'$ MAGA Mania collection is 'yuge' and guaranteed to make NFTs great again. Own a piece of this iconic era and show off your Trump-tastic collection! <br><br>
+
+You will also get Trump'$ MAGA Coin, a Meme Coin, the ultimate tribute to the most unpredictable political saga of our time. Ride the waves of meme magic with a coin that’s as bold and brash as its namesake. 
+ <br>
+            <br>
+            <!-- Pop Art was a strong art movement and we have brought it back to the future. This is just an art project and we'll avoid to make any other promises. What you see is what you get. However, this will not prevent us from upgrading and taking the project to the next level. We'll definetely give back to the community through giveaways and access to our future projects. 
+            <br> -->
+            <!-- <br> -->
+            LFG!!
+            <!-- Buy me or leave me alone! -->
+            <br/>
+
+        </p>
+
+        <section class="info">
+            <h3 id=""><span>Supply</span><br>7777</h3>
+            <h3 id=""><span>Blockchain</span><br>Cardano</h3>
+            <h3 id=""><span>Price</span><br>15 ADA</h3>
+            <h3 id=""><span>Launch Date</span><br> 7/8/24, 6PM UTC</h3>                      
+        </section>
+
+    </div>
+
+    <script>
+      
+        let btn = document.getElementById('btn');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.1 + '%';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.6 + 'px';
+        })
+    </script>
+
+
+<script type="text/javascript">
+    window.addEventListener("mousemove", parallax);
+    function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) /120;
+        var y = (e.clientY * moving_value) /300;
+
+        move.style.transform = "translateX(" + x +"px) translateY(" + y + "px)";
+        });
+    }
+
+</script>
+
+
+
+   </body>
+</html>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function scrollVideo() {
+    var video = $('#video').get(0),
+        videoLength = video.duration,
+        scrollPosition = $(document).scrollTop();
+
+    video.currentTime = (scrollPosition / ($(document).height() - $(window).height())) * videoLength;
+}
+
+$(window).scroll(function(e) {
+    scrollVideo();
+});
+</script> -->
